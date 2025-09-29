@@ -1,0 +1,25 @@
+1. What software is on our current drone? (Summary of the next 5 weeks)
+    * Object detection: OpenCV, but last year switched to YOLO
+    * Ariel imagery/Stitching: Tried OpenCV but better results with OpenDroneMap
+    * Flight controller: Ardupilot running on cube orange -> takes commands via MavLink over Wifi
+    * Flight computer: NVIDIA Jetson Orin Nano running Ubuntu mounted on drone
+
+2. What kinds of challenges/projects can YOU work on as a Software team member?
+    * Reinforcement learning research - Flight controller improvement
+    * Computer vision - Revamp stitching code, better object detection system
+    * Applications with less coding - 3D mapping for environmental research
+    * Other research we may want to do can probably be supported
+
+3. What’s the “industry standard” for drone software in 2025?
+    * Flight software - Artupilot/betaflight for hobbyists, ROS 2-based/PX4 for commercial
+    * Real time autonomy - Basic methods like YOLO for hobbyists, Advanced SLAM/path planning/AI inference for commercial
+    * Compliance and Safety - RFID device + B4UFLY for hobbyists, Automated risk assesments/airspace alerts for commercial
+    * Data integration - Local storage for hobbyists, cloud for commercial
+    * Also advances in Beyond Visual Line of Sight -> multiple drones working together with one operator
+
+4. How does one learn about drones effectively in 2025?
+    * AI is very helpful for explaining concepts and for coding if used correctly
+    * Experience through projects and learning
+    * Perservering even if things are taking a long time to work
+    * Learning more about the drone overall from other teams as well, not just software
+    
