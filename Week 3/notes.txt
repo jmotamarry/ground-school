@@ -1,0 +1,16 @@
+1. What are some methods used for blob detection?
+    *
+
+2. How can blob detection be used to find objects in a field? What are its benefits and limitations?
+
+
+3. What are the underlying mechanics of the convolutional neural network used in the YOLO model?
+
+
+4. How can our club leverage our manpower to label many images in a short amount of time on roboflow? (Teach them how to use roboflow so that when we need to label a bunch of images quickly, we can use the built in roboflow tools to mobilize quickly)
+
+
+5. What are some upsides and downsides to using YOLO for our competition vehicle?
+
+
+6. What other techniques might there be for object detection?
