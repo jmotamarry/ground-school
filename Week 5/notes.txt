@@ -1,0 +1,54 @@
+1. How do we communicate with the drone while it’s in the air?
+    * Ground station communicates with the onboard computer over WiFi (UDP)
+    * The drone is a WiFi hotspot
+    * Two main protocols - UDP and TCP
+    * UDP
+        * Throw a bunch of data
+        * No reliability
+        * Packet loss but much faster
+    * TCP
+        * Make sure you have a user session between both sides before sending data
+        * Very reliable, good for file transfers
+    * UDP is better for drone because mainly 1 way communication and speed matters
+    * RC Transmitters (TX)
+    * RC Receivers (RX)
+
+2. What is the role of the onboard computer system and how does it complement the flight controller? How does it communicate?
+    * Onboard Computer Functions
+        * Arbitratily complex decision making
+        * Robot os
+        * Inference
+    * Onboard computer usually communicates over standard protocols like USB
+    * Builtin AI accelerator for faster inference
+    * It complements the flight controller by computing complex things and sending instructions
+    * The flight controller does the low-level work to implement those instructions
+    * Running Ubuntu
+    * ROS runs on linnux
+
+3. What are the trade-offs between different data links (WiFi, radio, LTE)?
+    * WiFi
+        * High bandwith
+        * Common in most computers
+        * Works well for short-range comms
+        * Limited range
+        * Interference in most commonly used bands
+        * Line of sight required
+    * Radio
+        * Long range
+        * Reliable; low-latency
+        * Works without cellular or WiFi
+        * Lower bandwith so less data can be sent
+        * Requires dedicated hardware, not built in to computers usually
+        * Regulations on allowed frequencies
+    * LTE
+        * Very wide coverage
+        * High bandwith
+        * Line of sight to ground station not necessary
+        * Currently used on Skydio drones
+        * Latency higher than WiFi and radio
+        * Requires SIM card/data plan
+        * Dead zones possible if far from cities
+
+4. How does the onboard computer connect to the ground station or other devices over WiFi? (SSH tutorial)
+    * You ssh into the onboard computer
+    * SSH commands
