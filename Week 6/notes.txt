@@ -1,0 +1,26 @@
+1. What are the benefits of simulating a drone with software/hardware-in-the-loop before flying?
+    * Cheaper
+    * Software testing
+    * Testing processing power
+    * Testing comms links
+    * Don't need to take the drone out to test
+    * Can train AI models with thousands of semi-real flights
+        * Can't feasibly train RL with real drone
+
+2. How is machine learning used to improve drone autonomy (navigation, obstacle avoidance, etc.)? What benefits does it have over traditional guidance systems like PID loops?
+    * Supervised learning
+    * Unsupervised learning
+    * Reinforcement learning
+    * Can improve navigation/path planning in cluttered environments
+    * Real-time obstacle avoidance using vision models
+    * Adaptive control under disturbances
+
+3. What is ROS, and why is it universal in autonomous robotics?
+    * stands for robot operating system
+    * it's not actually an operating system
+    * open source for robotics
+    * modularity, communication, ecosystem, and simulation support
+
+4. What are the steps/challenges of deploying ROS on embedded systems like the drone?
+    * There are many different versions of ROS
+    * Integration is hard
